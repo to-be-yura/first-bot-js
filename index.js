@@ -78,7 +78,7 @@ const start = async () => {
 			return startGame(chatId);
 		}
 
-		if (data === chats[chatId]) {
+		if (data == chats[chatId]) {
 			user.right += 1;
 			await bot.sendMessage(chatId, `Угадал!!! 🥳`, againOptions)
 		} else {
